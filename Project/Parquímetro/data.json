@@ -1,0 +1,36 @@
+{
+  "menus": [
+    {
+      "id": "welcome",
+      "title": "Bem Vindo!",
+      "options": ["Estacionar"]
+    },
+    {
+      "id": "chooseArea",
+      "title": "Escolha uma Zona",
+      "options": [ "Zona 1", "Zona 2", "Zona 3" ]
+    },
+    {
+      "id": "pay",
+      "title": "Title will be replaced",
+      "options": [ "0.01", "0.02", "0.05", "0.10", "0.20", "0.50", "1.00", "2.00" ]
+    }
+  ],
+  "areas": [
+    {
+      "id": 1,
+      "pricePerHour": 1.15,
+      "maxTime": 45
+    },
+    {
+      "id": 2,
+      "pricePerHour": 1.00,
+      "maxTime": 120
+    },
+    {
+      "id": 3,
+      "pricePerHour": 0.62,
+      "maxTime": null
+    }
+  ]
+}

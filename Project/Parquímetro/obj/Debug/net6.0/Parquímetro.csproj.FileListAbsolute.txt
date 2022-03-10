@@ -1,0 +1,15 @@
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\bin\Debug\net6.0\Parquímetro.exe
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\bin\Debug\net6.0\Parquímetro.deps.json
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\bin\Debug\net6.0\Parquímetro.runtimeconfig.json
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\bin\Debug\net6.0\Parquímetro.dll
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\bin\Debug\net6.0\ref\Parquímetro.dll
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\bin\Debug\net6.0\Parquímetro.pdb
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\obj\Debug\net6.0\Parquímetro.csproj.AssemblyReference.cache
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\obj\Debug\net6.0\Parquímetro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\obj\Debug\net6.0\Parquímetro.AssemblyInfoInputs.cache
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\obj\Debug\net6.0\Parquímetro.AssemblyInfo.cs
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\obj\Debug\net6.0\Parquímetro.csproj.CoreCompileInputs.cache
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\obj\Debug\net6.0\Parquímetro.dll
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\obj\Debug\net6.0\ref\Parquímetro.dll
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\obj\Debug\net6.0\Parquímetro.pdb
+C:\Users\wilso\Desktop\.Net\UF - 2\Project\VS\Parquímetro\Parquímetro\obj\Debug\net6.0\Parquímetro.genruntimeconfig.cache

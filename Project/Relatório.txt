@@ -1,0 +1,54 @@
+Projecto da UF 2 - Desenvolvimento de Aplicações WEB
+
+Nome do projecto: Parque de Estacionamento (Parquímetro)
+		
+	Neste projeto foi criada:
+			
+		Uma struct UI "User interface" onde:
+			
+		-> É definido a forma do Menu;
+			- recebe três parâmetros: um tipo Menu, um tipo double e um tipo DateTime;
+			- os tipos double e DateTime podem ser null, pois, dependentemente da janela (submenu)
+			  em execução, podem não assumir qualquer valor;
+		-> É feita a verificação e validação do input por parte do user, aquando da execução da aplicação;
+		-> É criada uma função tipo lista para guardar as opções válidas para o user input;
+
+		Uma classe Menu onde:
+
+		-> São atribuídos id's, titulos e um options array, para cada um dos submenus;
+		-> Na construção dos submenus referentes às zonas, são importados atributos da classe Área,
+           onde será definido o contexto para pagamento do parque, tendo em conta o tempo máximo de estacionamento
+		   e a tarifa horária;
+		-> São criados métodos para cada um dos submenus, onde são definidos que valores cada uma das variáveis deve
+		   guardar e que valores deve o array guardar;
+
+		Uma classe Time (Tempo) onde:
+
+		-> É criada uma função GetTime, com dois tipos de variáveis, int e string;
+			- o tipo string, serve para transformar os minutos em texto, de forma a poder adicionar um zero quando os
+			  minutos são menores que dez, ou seja, quando possuem um só algarismo;
+		-> O tempo é utilizado para informar o user da hora e data atual e para contabilizar, e representar nos
+		   submenus respectivos, a hora de saída;
+
+		Uma struct Payment (Pagamento) onde:
+
+		-> É criada uma função GetExitTime, que recebe um parâmetro Area, para calcular a hora de saída do 
+		   estacionamento, desta forma, são adicionados os minutos à hora actual e dentro do horário de funcionamento
+		   do parquímetro;
+			- o horário de funcionamento (cobrança pelo estacionamento) do parquímetro compreende os dias da semana, 
+			  de segunda a sexta-feira, das 09h às 20h, e sábados, das 09h às 14h;
+			- é usado uma condição switch para determinar a hora de saída, para os casos da zona 1, 2 e 3. Na zona 3, 
+			  são necessárias novas condições, pois o tempo de estacionamento é ilimitado. Pelo que o tempo de 
+			  estacionamento tem a possibilidade de estender-se por vários dias, ao contrário das zonas 1 e 2 que 
+			  estipulam um tempo máximo de 45min e 120min, respectivamente;
+		-> É criada uma função GetChange (Troco) para devolver o troco ao cliente, nas zonas 1 e 2; (EXTRA)
+
+		
+		Não foi criado, como parte dos requisitos:
+
+		Um Menu Administrador;
+
+
+		Extras:
+
+		Foi criado uma função Troco;
