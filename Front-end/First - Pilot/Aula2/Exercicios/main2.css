@@ -1,0 +1,17 @@
+/*     EX 1    */
+.onethreefive {background-color: rgb(197, 123, 123); color: black; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+.two {color: blue; font-size: 150%; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.four {background-color: rgb(147, 245, 147); color: black; font-weight: bolder; font-size: 90%; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+/*     EX 2    */
+button.btnstyle {font-size: 130%; font-family: cursive; border: 30px;}
+/*     EX 3    */
+p.p3 {color: red;}
+button.btn3 {border: 30px;}
+div.divstyle {color: green; border-color: black;}
+/*     EX 4    */
+a.external:hover {background-color: blue; color: white;}
+a.external::first-letter {text-transform: uppercase;} 
+/*     EX 5    */
+.central {background-color: 50%; width: 50%; margin-left: 25%; }
+/*    On my way   */

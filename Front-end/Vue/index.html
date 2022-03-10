@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0"></script>
+</head>
+<body>
+    <div id="app">
+         Hi {{message}}, get some {{fuzz}} <br> <input v-model="message" placeholder="edit me"><input v-model="fuzz">
+        <p>Message is: Hi {{message}}, get some {{fuzz}}</p>
+        <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+        <label for="jack">Jack</label>
+        <input type="checkbox" id="john" value="John" v-model="checkedNames">
+        <label for="john">John</label>
+        <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+        <label for="mike">Mike</label>
+        <br>
+        <span>Checked names: {{ checkedNames }}</span>
+        <br>
+        <button @click="increment()">Count is: {{count}}</button>
+        <br>
+        <br>
+        <p style="font-weight: bold;">Radio</p>
+        <input type="radio" id="one" value="One" v-model="picked">
+        <label for="one">One</label>
+        <br>
+        <input type="radio" id="two" value="Two" v-model="picked">
+        <label for="two">Two</label>
+        <br>
+        <span>Picked: {{ picked }}</span>
+        <br>
+        <p style="font-weight: bold;">Select Box</p>
+        <select v-model="selected">
+            <option disabled value="">Please select one</option>
+            <option>A</option>           
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <span>Selected: {{ selected }}</span>
+        <br>
+        <p style="font-weight: bold;">Select Lists Arrays</p>
+        <ul id="example-2">
+            <li v-for="(item, index) in items">
+                {{ parentMessage }} - {{ index }} - {{ item.message}}
+            </li>
+        </ul>
+        <br>
+        <p style="font-weight: bold;">Iterações</p>
+        <ul>
+            <li v-for="n in contdown">{{ n }}</li>
+        </ul>
+        <br>
+        <p style="font-weight: bold;">Iterações c/ posição</p>
+        <ul>
+            <li v-for="(fruit, i) in fruits">{{ i }} - {{ fruit }}</li>
+        </ul>
+        <br>
+        <p style="font-weight: bold;">Iterações - Propriedades de um objecto</p>
+        <ul>
+            <li v-for="(value, key, index) in profile">{{ key }} - {{ value }}</li>
+        </ul>
+        <br>
+        <p style="font-weight: bold;">Condições</p>
+        <div v-if="count > 10">
+            Count is greater than 10
+        </div>
+        <div v-else-if="count == 10">
+            Count is 10
+        </div>
+        <div v-else>
+            Count is less than 10
+        </div>
+        <br>
+        <p style="font-weight: bold;">Showing/hiding</p>
+        <h3> Using v-show directive</h3>
+            <div v-show="count > 10">
+                Count is greater than 10
+            </div>
+            <div v-show="count == 10">
+                Count is 10
+            </div>
+            <div v-show="count < 10">
+                Count is less than 10
+            </div>
+        <br>
+        <p style="font-weight: bold;">Events</p>
+        <h2>{{ count }}</h2>
+        <button v-on:click="count += 1">Increase</button>
+        <button v-on:click="count -= 1">Decrease</button>
+        <br>
+        <p style="font-weight: bold;">Methods/Functions</p>
+        <h2>Greet</h2>
+        <button v-on:click="greet('Hello')">Say Hello</button>
+        <button v-on:click="greet('Hi')">Say Hi</button>
+        <button v-on:click="greet('Namaste')">Say Namaste</button>
+        <br/><br/>
+        {{greeting}}
+        <br>
+        <p style="font-weight: bold;">Computed</p>
+        <label>Type in your name: </label>
+        <input type="text" v-model="name"/> <br/><br/>
+        Your name is {{name}}<br/>
+        And is {{charcount}} characters long.
+        <br>
+        
+
+
+
+    </div>
+</body>
+</html>

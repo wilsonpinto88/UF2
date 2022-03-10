@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="js/squery.validate.js"></script>
+    <script src="js/signup-form.js"></script>
+</head>
+<body>
+    <h2>Ex 2</h2>
+    <button class="jsKnock" onclick="myFunction()">KNOCK !!</button>
+    <p id="my_p">Who's there?</p>
+    <h2>Ex 3</h2>
+    <form name="test"><input name="boxes" type="text" size="10" value="good">
+    </form>
+    <input type="button" value="Click Here>>" onclick="alert_me()" "\br">
+    <p></p>
+    <h2>Ex 4</h2>
+    <button id="user_input" onclick="user_input()">Click</button>
+    <p id="printUserName"></p>
+    <h2>Ex 5</h2>
+    <p>Enter an equation.<br>Then mouse click outside the box for the result!</p>
+    <input name="boxes" id="calculator" type="text" size="10" 
+        value="" onblur="mathThis(this)">
+    <h2>Ex 6</h2>
+    <button id="ok">OK</button>
+    <h2>Ex 7</h2>
+    <label><input type="radio" name="myRadio" value="1">Radio 1</label>
+    <label><input type="radio" name="myRadio" value="2">Radio 2</label>
+    <label><input type="radio" name="myRadio" value="3">Radio 3</label>
+    <label><input type="radio" name="myRadio" value="4">Radio 4</label>
+    <label><input type="radio" name="myRadio" value="5">Radio 5</label>
+    <label><input type="radio" name="myRadio" value="6">Radio 6</label>
+    <label><input type="radio" name="myRadio" value="7">Radio 7</label>
+    <label><input type="radio" name="myRadio" value="8">Radio 8</label>
+    <button id="radioSelect">Select</button>
+
+    <!--   TPC  -  Form   -->
+    <h2>Form comment</h2>
+    <form action="form-handler.html" class="cmxform" id="commentForm" 
+        method="get" autocomplete="off">
+        <fieldset>
+            <legend>Comment Form</legend>
+            <p>
+                <label for="cname">Name <span> (required, at least 2 characters)</span></label>
+                <input type="text" id="cname" name="name" minlength="2" required/>
+            </p>
+            <p>
+                <label for="cemail">E-Mail <span>(required, won't be published)</span></label>
+                <input type="email" id="cemail" name="email" required/>
+            </p>
+            <p>
+                <label for="curl">URL <span>(optional)</span></label>
+                <input type="url" id="curl" name="url"/>
+            </p>
+            <p>
+                <label for="ccomment">Your comment <span>(required)</span></label>
+                <textarea name="comment" id="ccomment" required></textarea>
+            </p>
+            <p>
+                <input type="submit" class="submit" value="Submit"/>
+            </p>
+        </fieldset>
+    </form>
+
+    <!-- Submit Form -->
+    <h2>Submit Form</h2>
+    <form action="form-handler.html" class="cmxform" id="signupForm" method="get" autocomplete="off">
+        <fieldset>
+            <legend>Sign-up Form</legend>
+            <p>
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" name="firstname">
+            </p>
+            <p>
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" name="lastname">
+            </p>
+            <p>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </p>
+            <p>
+                <label for="confirmPassword">Confirm password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </p>
+            <p>
+                <label for="agree">Please agree to our policy</label>
+                <input type="checkbox" class="checkbox" id="agree" name="agree">
+            </p>
+            <p>
+                <label for="newsletter">I'd like to receive the newsletter</label>
+                <input type="checkbox" class="checkbox" id="newsletter" name="newsletter">
+            </p>
+            <fieldset id="newsletterTopics">
+                <legend>Topics (select at least two)</legend>
+                <label for="topicMarketflash">
+                    <input type="checkbox" id="topicMarketflash" value="marketflash" name="topic">Marquetflash</label>
+                <label for="topicFuzz">
+                    <input type="checkbox" id="topicFuzz" value="fuzz" name="topic">
+                    Latest Fuzz</label>
+                <label for="topicDigester">
+                    <input type="checkbox" id="topicDigester" value="digester" name="topic">
+                    Mailing list digester</label>
+            </fieldset>
+            <p>
+                <input type="submit" class="submit" value="submit">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

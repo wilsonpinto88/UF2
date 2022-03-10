@@ -1,0 +1,8 @@
+h1 {color: white; background-color: red;}
+p {color: red;} 
+
+#mission {color: red;font-style: italic;font-family: "Garamond", "Century Gothic", serif;}
+
+.special{background-color: yellow;font-weight: bold;}
+
+p.shout{color: red;font-family: cursive;}

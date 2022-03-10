@@ -1,0 +1,12 @@
+-> grid-column-start:
+
+. For example, grid-column-start: 3; will water the area starting at the 3rd vertical grid line, 
+  which is another way of saying the 3rd vertical border from the left in the grid.
+  
+-> grid-column-end:
+
+same as before
+
+-> span:
+
+Use with grid-column, 
