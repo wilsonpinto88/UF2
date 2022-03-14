@@ -1,0 +1,31 @@
+﻿@model FREQ_2019419.Characters;
+
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Ahoy!</h1>
+	<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+	<ul>
+		@foreach (var item in Model.CharactersList)
+		{
+			<li>
+				@Html.DisplayFor(modelitem => item.Id)
+				@Html.DisplayFor(modelitem => item.Name)
+				@Html.DisplayFor(modelitem => item.Gender)
+				@Html.DisplayFor(modelitem => item.Homeworld)
+				@Html.DisplayFor(modelitem => item.Born)
+
+				@Html.CheckBoxFor(modelitem => item.Jedi)
+
+				@Html.ActionLink("Edit", "Edit", new{ id = item.Id})
+				@Html.ActionLink("Delete", "Delete", new{ id = item.Id})
+				@Html.ActionLink("Details", "Details", new{ id = item.Id})
+
+			</li>
+		}
+	</ul>
+</div>
+

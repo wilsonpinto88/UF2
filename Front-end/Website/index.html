@@ -4,162 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Extreme Earth</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"
+      integrity="sha512-Cb0WDP6lVyVaQJulFMEOBGpkgqU6UAOEBpthbb9BfdhmUXnmYQwobuCm6Xp2YYL6Pd/l0ZA5Up/ijp0fu+nFpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0"></script>
   </head>
   <body>
-    <section class="header">
-      <nav>
-        <a href="index.html"><img src="images/logo.png" /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fas fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">COURSE</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+          EXTREME E<i class="fab fa-think-peaks"></i>RTH</a
+        >
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <i class="fas fa-bars" onclick="showMenu()"></i>
-      </nav>
-      <div class="text-box">
-        <h1>World's biggest university</h1>
-        <p>Making website is now <br />...</p>
-        <a href="" class="hero-btn">Visit us</a>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> Home </a>
+          </li>
+          <li class="navbar__item">
+            <a href="tech.html" class="navbar__links"> Tech </a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> Products </a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/" class="button"> Sign Up </a>
+          </li>
+        </ul>
       </div>
-    </section>
-
-    <!--  Course  -->
-    <section class="course">
-      <h1>Courses we offer</h1>
-      <p>Let's go!</p>
-
-      <div class="row">
-        <div class="course-col">
-          <h3>Intermediate</h3>
-          <p>Let's go</p>
+    </nav>
+    <!-- End Navbar Section -->
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>THE GREATEST SHOW</h1>
+          <h2>ON E<i class="fab fa-think-peaks"></i>RTH</h2>
+          <br>
+          <button class="main__btn">GRAB A SEAT</button>
         </div>
-        <div class="course-col">
-          <h3>Degree</h3>
-          <p>Let's go</p>
-        </div>
-        <div class="course-col">
-          <h3>Post Graduation</h3>
-          <p>Let's go</p>
-        </div>
-      </div>
-    </section>
-
-    <!--    campus   -->
-    <section class="campus">
-      <h1>Our Global Campus</h1>
-      <p>Lorm ipsulum</p>
-      <div class="row">
-        <div class="campus-col">
-          <img src="images/london.png" />
-          <div class="layer">
-            <h3>LONDON</h3>
-          </div>
-        </div>
-        <div class="campus-col">
-          <img src="images/newyork.png" />
-          <div class="layer">
-            <h3>NEW YORK</h3>
-          </div>
-        </div>
-        <div class="campus-col">
-          <img src="images/washington.png" />
-          <div class="layer">
-            <h3>WASHINGTON</h3>
-          </div>
+        <div class="main__img--container">
+          <img src="assets/images/pic1.svg" alt="pic1" id="main__img" />
         </div>
       </div>
-    </section>
-
-    <!-- ----- Facilities ----- -->
-    <section class="facilities">
-      <h1>Our Facilities</h1>
-      <p>Come meet us!</p>
-
-      <div class="row">
-        <div class="facilities-col">
-          <img src="images/library.png" />
-          <h3>World Class Library</h3>
-          <p>Meet our Library</p>
+    </div>
+    <!-- End Hero Section -->
+    <!-- Services Section-->
+    <div class="services">
+      <h1>See what the hype is about</h1>
+      <div class="services__container">
+        <div class="services__card">
+          <h2>Experience Bliss</h2>
+          <p>AI Powered Technology</p>
         </div>
-        <div class="facilities-col">
-          <img src="images/basketball.png" />
-          <h3>Largest Play Ground</h3>
-          <p>Meet our Play Ground</p>
-        </div>
-        <div class="facilities-col">
-          <img src="images/cafeteria.png" />
-          <h3>Tasty and Healthy Food</h3>
-          <p>Can't miss it out!</p>
+        div class="services__card">
+          <h2>Are you Ready?</h2>
+          <p>Take the Leap</p>
         </div>
       </div>
-    </section>
-
-    <!-- -- Testimonials -- -->
-    <section class="testimonials">
-      <h1>What Our Students Say</h1>
-      <p>Come check them out, first hand!</p>
-
-      <div class="row">
-        <div class="testimonial-col">
-          <img src="images/user1.jpg" />
-          <div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-              quod dolorem maiores pariatur explicabo molestias, ex ad harum
-              nulla itaque veniam sequi eum facere culpa, mollitia iusto! Vel,
-              repellat dolorem!
-            </p>
-            <h3>Christine Berkley</h3>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>            
-            <i class="fas fa-star-o"></i>
-          </div>
-        </div>
-        <div class="testimonial-col">
-            <img src="images/user2.jpg" />
-            <div>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-                quod dolorem maiores pariatur explicabo molestias, ex ad harum
-                nulla itaque veniam sequi eum facere culpa, mollitia iusto! Vel,
-                repellat dolorem!
-              </p>
-              <h3>David Byer</h3>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-o"></i>
-            </div>
-          </div>
-  
-      </div>
-    </section>
-    <!-----JavaScript for toggle Menu ---->
-    <script>
-      var navLinks = document.getElementById("navLinks");
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
+    </div>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
