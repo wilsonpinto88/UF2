@@ -1,0 +1,49 @@
+{
+  "destinations": [
+    {
+      "name": "Lightning",
+      "slug": "gallery",
+      "image": [
+        "Lightning1.jpg",
+        "Lightning2.jpg",
+        "Lightning3.jpg"
+      ],
+      "id": 1,
+      "description": [
+        "Catatumbo, Venezuela - Jonas Piontek - Lightning Storm",
+        "Catatumbo, Venezuela - Jonas Piontek - Lightning Storm",
+        "Catatumbo, Venezuela - Jonas Piontek - Lightning Storm"
+      ]
+    },
+    {
+      "name": "Volcano",
+      "slug": "gallery",
+      "image": [
+        "volcano1.jpeg",
+        "volcano2.jpg",
+        "volcano3.jpg"
+      ],
+      "id": 2,
+      "description": [
+        "Chile - Francisco Negroni - Volcano Eruption",
+        "Chile - Francisco Negroni - Volcano Eruption",
+        "Chile - Francisco Negroni - Volcano Eruption"
+      ]
+    },
+    {
+      "name": "Night Sky",
+      "slug": "gallery",
+      "image": [
+        "nightSky1.jpg",
+        "nightSky2.jpg",
+        "nightSky3.jpg"
+      ],
+      "id": 3,
+      "description": [
+        "Mono Lake - Navid Baraty - Milkyway on the Night Sky",
+        "Jökulsárlón, Iceland - Stéphane Vetter - Northern lights (Aurora borealis)",
+        "Norway, Lofoten Islands - Alex Conu - Northern lights (Aurora borealis)"
+      ]
+    }
+  ]
+}

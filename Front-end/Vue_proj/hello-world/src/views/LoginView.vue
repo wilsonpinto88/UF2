@@ -24,10 +24,5 @@
     </div>
   </body>
 </template>
-<style>
-  @import "@/assets/css/login.css";
-  /* @import url("slide navbar style.css"); */
-  @import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap");
-</style>
 
 
