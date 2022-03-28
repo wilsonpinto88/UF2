@@ -3,6 +3,8 @@ import HomeView from "@/views/HomeView.vue";
 import AboutView from "@/views/AboutView.vue";
 import GalleryView from "@/views/GalleryView.vue";
 import LoginView from "@/views/LoginView.vue";
+import PageNotFound from "@/views/PageNotFound.vue";
+import AdminView from "@/views/AdminView.vue";
 
 const routes = [
   {
@@ -25,10 +27,20 @@ const routes = [
     name: "LoginView",
     component: LoginView,
   },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "NotFound",
+    component: PageNotFound,
+  },
+  {
+    path: "/admin",
+    name: "AdminView",
+    component: AdminView,
+  },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 

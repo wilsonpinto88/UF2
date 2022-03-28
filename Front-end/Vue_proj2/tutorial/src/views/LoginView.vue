@@ -13,8 +13,16 @@
       <div class="login">
         <form>
           <label for="chk" aria-hidden="true">Login</label>
-          <input type="text" placeholder="Email" v-model="email" />
-          <input type="password" placeholder="Password" v-model="password" />
+          <input type="text" placeholder="Email" v-model="emailLogin" />
+          <input
+            type="password"
+            placeholder="Password"
+            v-model="passwordLogin"
+          />
+          <select class="select__admin" name="user_type">
+            <option aria-placeholder="user" value="user">User</option>
+            <option aria-placeholder="admin" value="admin">Admin</option>
+          </select>
           <p v-if="errMsg">{{ errMsg }}</p>
           <button @click="checkin">Login</button>
         </form>
@@ -26,16 +34,18 @@
 <script setup>
 /* eslint-disable */
 import { ref } from "vue";
-// import {
-//   getAuth,
-//   createUserWithEmailAndPassword,
-//   signInWithEmailAndPassword,
-// } from "firebase/firebase-auth";
-import firebase from 'firebase';
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/firebase-auth";
+import firebase from "firebase";
 
 import { useRouter } from "vue-router";
 const email = ref("");
 const password = ref("");
+const emailLogin = ref("");
+const passwordLogin = ref("");
 const errMsg = ref(); // ERROR MESSAGE
 const router = useRouter(); // get a reference to our vue router
 
@@ -58,7 +68,7 @@ const checkin = () => {
   // need .value because ref()
   firebase
     .auth()
-    .signInWithEmailAndPassword(email.value, password.value)
+    .signInWithEmailAndPassword(emailLogin.value, passwordLogin.value)
     .then((data) => {
       console.log("Successfully logged in!");
       router.push("/"); // redirect to the home
@@ -132,7 +142,7 @@ const checkin = () => {
 // };
 </script>
 
-<style>
+<style scoped>
 .main {
   width: 350px;
   height: 500px;
@@ -162,6 +172,18 @@ label {
   transition: 0.5s ease-in-out;
 }
 input {
+  width: 60%;
+  height: 20px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.select__admin {
   width: 60%;
   height: 20px;
   background: #e0dede;

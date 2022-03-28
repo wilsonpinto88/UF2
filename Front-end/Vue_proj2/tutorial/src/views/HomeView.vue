@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 import sourceData from "@/data.json";
 export default {
   data() {
@@ -23,3 +23,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+h2:hover {
+  text-decoration: underline;
+}
+</style>

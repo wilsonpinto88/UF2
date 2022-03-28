@@ -24,6 +24,7 @@
           <a href="/gallery">Gallery</a>
           <a href="/about">About</a>
           <a href="/login">Login</a>
+          <a id="admin__hiden" href="/admin">Admin</a>
         </p>
         <p>Extreme Earth &copy; 2022</p>
       </div>
@@ -32,6 +33,8 @@
 </template>
 
 <script setup>
+// /* eslint-disable */
+
 // import { onMounted, ref } from "vue";
 // import { getAuth, onAuthStateChanged, signOut } from "firebase/firebase-auth";
 // import { useRouter } from "vue-router";
@@ -69,7 +72,7 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
-  margin-top: 150px;
+  margin-top: 100px;
   background: #eee;
 }
 #app {
@@ -84,7 +87,7 @@ a:visited {
   color: #2c3e50;
 }
 .container {
-  margin: 0 auto;
+  margin: 0 200px auto;
   max-width: 960px;
 }
 
@@ -156,47 +159,6 @@ a {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-/*Experiences*/
-.experiences {
-  padding-top: 30px;
-  padding-bottom: 60px;
-  margin-top: 30px;
-  border-top: 1px solid #d4d4d4;
-  box-shadow: 0px -1px #fbfbfb;
-}
-.experiences .card {
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.2s ease transform;
-}
-.experiences .card:hover {
-  transform: scale(1.05);
-}
-.experiences .cards {
-  display: flex;
-  gap: 20px;
-  text-align: center;
-}
-.experiences img {
-  width: 250px;
-  height: 150px;
-  object-fit: cover;
-  display: block;
-}
-.experiences .card .card__text {
-  background: #2c3e50;
-  color: white;
-  display: block;
-  border-top: 2px solid #4e6c71;
-  padding: 10px;
-}
-
-.experience-details img {
-  float: left;
-  margin: 10px;
-}
-
 /*Modal Overlay*/
 .modal-overlay:before {
   content: "";
@@ -261,7 +223,7 @@ a {
   padding: 45px 50px;
   bottom: 0;
   width: 100%;
-  background-color: #292c2f;
+  background-color: #2c3e50;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   text-align: left;
@@ -332,5 +294,13 @@ a {
 
 .footer p.footer-links a:hover {
   text-decoration: underline;
+}
+
+#admin__hiden {
+  color: #2c3e50;
+}
+
+#admin__hiden:hover {
+  color: #fff;
 }
 </style>
